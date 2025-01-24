@@ -73,6 +73,11 @@ header, footer{
 	color: white;
 	
 }
+/*Офорление постов практических работ*/
+.post-info {
+	color: grey;
+}
+.post{display:flex;}
 /* Оформление футера*/
 .footer-columns{
 	display: flex;
