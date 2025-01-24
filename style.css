@@ -34,6 +34,7 @@ header, footer{
 	float: left;
 	width: auto;
 	height: auto;
+	transition: 0.5s;
 }
 .menu-main li a {
 	display: block;
@@ -89,4 +90,29 @@ header, footer{
 }
 .menu-footer li a, .footer-column p a{
 	color: white;
+	list-style:none;
+	text-decoration:none;
+}
+.menu-footer li{
+	list-style:none;
+	line-height:50px; 
+	text-align: center;
+	font-size:30px;
+	border: 3px solid #fff;
+	border-radius:10%;
+	transition: 0.5s;
+}
+
+.menu-footer li:hover, .menu-main li:hover {
+	background:#87CEEB;
+}
+.footer-column  p a, .footer-column  p{
+	font-size: 20px;
+}
+.footer-column  p a:hover{
+	color:#FF4500;
+	transition:0.5s;
+}
+footer{
+	border-top: 6px solid black;
 }
