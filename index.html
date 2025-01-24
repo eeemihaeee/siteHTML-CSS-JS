@@ -1,9 +1,15 @@
+<!DOCTYPE HTML>
 <html>
 <head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
 	<title> Это мой сайт! </title>
 	<link rel='stylesheet' href='style.css'>
 </head>
 <header>
+	<div class='logo-image'> <!-- логотип сайта -->
+				<img src='images/logo.jpg' decoding='async' 
+				alt='Logo' width='50'>
+	</div>
 	<nav id = 'menu1'> <!--Тег-контейнер для меню -->
 		<ul class='menu-main'>
 			<li> <a href='#' class='current' > Home </a></li>
@@ -25,6 +31,34 @@
 	
 </body>
 
-<footer>
-
+<footer> <!-- Оформляем подвал нашего сайта -->
+	<div>
+		<div class='footer-columns'>
+			<div class='logo-image'> <!-- логотип сайта -->
+				<img src='images/logo.jpg' decoding='async' 
+				alt='Logo' width='250'>
+			</div>
+			<div class='footer-column'> <!-- дубль меню из шапки -->
+				 <!--Тег-контейнер для меню -->
+				<ul class='menu-footer'>
+					<li> <a href='#' class='current' > Home </a></li>
+					<li> <a href='#'> About </a></li>
+					<li> <a href='#'> Blog </a></li>
+					<li> <a href='#'> Contact </a></li>
+				</ul>
+			</div>
+			<div class='footer-column'> <!-- контактная информация -->
+				<h3> Свяжитесь с нами</h3>
+				<p>
+				Если вы заинтересованы в работе со мной или просто хотите 
+				пообщаться, просто пишите по электронной почте.
+				<br>
+				<strong> Email: <a href='#'> contact@mail.com</a> </strong>
+				</p>
+			</div>
+		</div>
+		<center>
+			<small> Copyright &copy; 2025</small>
+		</center>
+	</div>
 </footer>
