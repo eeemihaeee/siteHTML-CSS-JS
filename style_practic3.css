@@ -1,0 +1,49 @@
+/*
+	background-color: red|
+					  rgb(255,0,0)|
+					  hex(#f0f0f0)|
+					  rgba(255,0,0,.7) ;
+	background-image: url('images/fon.png') ;
+	background-repeat: repeat(по умолчанию)|
+					   no-repeat |
+					   repeat-x |
+					   repeat-y |
+					   space |
+					   round ;
+	background-position: left | center |right |
+						 top  | bottom | % | px
+	background-size: px | %| auto;	
+	background-attachment: fixed|scroll|local;
+	background-origin: padding-box|border-box|
+						content-box;
+	background-clip: padding-box| border-box|
+					content-box | text;
+	background: 
+*/
+.practic1 {
+	 margin: 5px;
+	 padding: 5px;
+	 background: #f0f0f0;
+	
+}
+.practic1 div{
+	border: 3px solid #fff;
+	background: #DC143C;
+	color: white;
+	margin: 5px;
+	text-align: center;
+	vertical-align: center;
+}
+.div_head{height: 70px;}
+.div_menu{height: 40px;}
+.aside_left{}
+.div_3{
+	display: flex;
+	margin: auto;
+	padding:auto;
+}
+.div_3 div{
+	flex: 33%;
+	margin: 5px;
+	
+}
