@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<title> Шаблон для первого сайта </title>
+	<link rel='stylesheet' href='style.css'>
+</head>
+<header>
+	<div class='logo-image'> <!-- логотип сайта -->
+				<img src='images/logo.jpg' decoding='async' 
+				alt='Logo' width='50'> 
+	</div>
+	<nav id = 'menu1'> <!--Тег-контейнер для меню -->
+		<ul class='menu-main'>
+			<li> <a href='index.html' class='current' > Home </a></li>
+			<li> <a href='about.html'> About </a>
+				 <ul>
+					<li> <a href='#'> About1 </a></li>
+					<li> <a href='#'> About2 </a></li>
+					<li> <a href='#'> About3 </a></li>
+					<li> <a href='#'> About4 </a></li>
+				 </ul>
+			</li>
+			<li> <a href='#'> Blog </a></li>
+			<li> <a href='#'> Contact </a></li>
+		</ul>
+	</nav>
+</header>
+
+<body>
+	
+	
+	<hr> <!-- Конец блоков постов-->
+	<!-- Формы и фреймы -->
+	<h2> Попробуйте что-нибудь найти</h2>
+	<form action='/search' method='POST'>
+		<input type='text' /><!-- строка ввода -->
+		<br>
+		<input type='submit' value='Поиск' /><!-- кнопка -->
+		<input type='reset' value='Удалить' />
+	</form>
+	<!-- Форма ввода данных от пользователя -->
+	<hr> <!-- Конец блоков постов-->
+	<h2>Введите ваши данные: </h2>
+	
+	<form action='/search' method='POST'>
+		<div>
+			<label for='uname'>Имя:</label>
+			<input type='text' id='uname' name='userName'/>
+		</div>
+		<div>
+			<label for='email'>Email:</label>
+			
+			<input type='email' id='email' name='userEmail'/>
+		</div>
+		<div>
+			<label for='password'>Пароль:</label>
+			<input type='password' id='password' name='userPassword'/>
+		</div>
+		<div>
+			<label for='phone'>Тел.:</label>
+			<input type='text' id='phone' name='userPhone'/>
+		</div>
+		<div>
+			<label for='nameOptions'>Ваша Специальность:</label>
+			<select id='nameOptions' name='nameOptions'>
+				<option> РПО </option>
+				<option> КГиД</option>
+			</select>
+		</div>
+		<div>
+			<label for='date'>День Рождения:</label>
+			<input type='date' id='date' name='userDate'/>
+		</div>
+		<div>
+			<label for='urlgit'>Ваш гитхаб:</label>
+			<input type='url' id='urlgit' name='userGit'/>
+		</div>
+		<div>
+			<label for='numberAge'>Кол-во лет в разработке:</label>
+			<input type='number' id='numberAge' name='userAge'
+				min='1' max='12' step='1'
+			/>
+		</div>
+		<div>
+		
+			<label>Пол: </label> <br>
+			<label>Мужчина</label>
+			<input type='radio' value='male' id ='gender1' name='sex'>
+			<label>Женщина</label>
+			<input type='radio' value='female' id ='gender2' name='sex'>
+		</div>
+		<div>
+			<label for='news'>Подписка на новости</label>
+			<input type='checkbox' id='news' name='userNews'/>
+		</div>
+		<div>
+			<label for='message'>Регистрация:</label>
+			<textarea id='message' name='userMessage'>Регистрация</textarea>
+			
+		</div>
+		<input type='submit' value='Отправить сообщение' /><!-- кнопка -->
+	</form>
+	<hr> <!-- Конец блоков постов-->
+</body>
+
+<footer> <!-- Оформляем подвал нашего сайта -->
+	<div>
+		<div class='footer-columns'>
+			<div class='logo-image'> <!-- логотип сайта -->
+				<img src='images/logo.jpg' decoding='async' 
+				alt='Logo' width='250'>
+			</div>
+			<div class='footer-column'> <!-- дубль меню из шапки -->
+				 <!--Тег-контейнер для меню -->
+				<ul class='menu-footer'>
+					<li> <a href='#' class='current' > Home </a></li>
+					<li> <a href='#'> About </a></li>
+					<li> <a href='#'> Blog </a></li>
+					<li> <a href='#'> Contact </a></li>
+				</ul>
+			</div>
+			<div class='footer-column'> <!-- контактная информация -->
+				<h3> Свяжитесь с нами</h3>
+				<p>
+				Если вы заинтересованы в работе со мной или просто хотите 
+				пообщаться, просто пишите по электронной почте. <br>
+				<strong>Сайт создан в рамках изучения курса HTML CSS.</strong>
+				<br>
+				<strong> Email: <a href='#'> eeemihaeee.rabota@mail.com</a> </strong>
+				</p>
+			</div>
+		</div>
+		<center>
+			<small> Copyright eeemihaeee &copy; 2025</small>
+		</center>
+	</div>
+</footer>
