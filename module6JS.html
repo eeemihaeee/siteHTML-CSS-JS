@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<title> Шаблон для первого сайта </title>
+	<link rel='stylesheet' href='style.css'>
+</head>
+<header>
+	<div class='logo-image'> <!-- логотип сайта -->
+				<img src='images/logo.jpg' decoding='async' 
+				alt='Logo' width='50'> 
+	</div>
+	<nav id = 'menu1'> <!--Тег-контейнер для меню -->
+		<ul class='menu-main'>
+			<li> <a href='index.html' class='current' > Home </a></li>
+			<li> <a href='about.html'> About </a>
+				 <ul>
+					<li> <a href='#'> About1 </a></li>
+					<li> <a href='#'> About2 </a></li>
+					<li> <a href='#'> About3 </a></li>
+					<li> <a href='#'> About4 </a></li>
+				 </ul>
+			</li>
+			<li> <a href='#'> Blog </a></li>
+			<li> <a href='#'> Contact </a></li>
+		</ul>
+	</nav>
+</header>
+
+<body>
+	<!-- Подключение script файла -->
+	<hr>
+	<script src='#'></script>
+	<p id='p1'> Paragraph width id = p1</p>
+	<script>
+		/* window(глобальный объект - общее пространство для всех других 
+		объектов, как HTML,CSS, так и JavaScript)
+			 -->location
+			 -->history
+			 -->document
+			 -->navigation
+			 -->screen
+			 innerHTML - обращение к объекту, для изменения его свойств(текст)
+			 Свойства языка:
+			 1) Регистрозависимость
+			 2) Комментарии
+			 3) Ключевые и зарезервированные слова
+			 4) Переменные 
+			 5) Типы данных - undefined, Null, Boolean, String,
+					Symbol, Number(NaN, Infinity,-Infinity, +0, -0), object
+			 6) Арифметические операции
+				x + y,
+				x - y,
+				x * y,
+				x / y,
+				x % y,
+				x ** y,
+				 -x,
+				 x++, ++x,
+				 x--, -x
+			 7) Логические операторы
+					Не стогая операция '==', '!=', '<', '>', '<=', '>='
+					Строгая операция '===', '!=='
+			 */
+			 x = 2
+			 y = 6
+			 z = x+ 2/(x+1)*y
+			 console.log(z + ' = Значение подсчитано!')
+			  z = x+ 2/(x-2)*y
+			 console.log(z + ' = Значение подсчитано!')
+			 console.log("Hello from script my users!") /*Вызов данных в консоль*/
+			 x = '10'
+			 y = '3'
+			 console.log(y>x)
+	</script>
+	
+	
+	<hr> <!-- Конец блоков постов-->
+	
+</body>
+
+<footer> <!-- Оформляем подвал нашего сайта -->
+	<div>
+		<div class='footer-columns'>
+			<div class='logo-image'> <!-- логотип сайта -->
+				<img src='images/logo.jpg' decoding='async' 
+				alt='Logo' width='250'>
+			</div>
+			<div class='footer-column'> <!-- дубль меню из шапки -->
+				 <!--Тег-контейнер для меню -->
+				<ul class='menu-footer'>
+					<li> <a href='#' class='current' > Home </a></li>
+					<li> <a href='#'> About </a></li>
+					<li> <a href='#'> Blog </a></li>
+					<li> <a href='#'> Contact </a></li>
+				</ul>
+			</div>
+			<div class='footer-column'> <!-- контактная информация -->
+				<h3> Свяжитесь с нами</h3>
+				<p>
+				Если вы заинтересованы в работе со мной или просто хотите 
+				пообщаться, просто пишите по электронной почте. <br>
+				<strong>Сайт создан в рамках изучения курса HTML CSS.</strong>
+				<br>
+				<strong> Email: <a href='#'> eeemihaeee.rabota@mail.com</a> </strong>
+				</p>
+			</div>
+		</div>
+		<center>
+			<small> Copyright eeemihaeee &copy; 2025</small>
+		</center>
+	</div>
+</footer>
