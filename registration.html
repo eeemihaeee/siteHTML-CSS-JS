@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<title> Шаблон для первого сайта </title>
+	<link rel='stylesheet' href='style.css'>
+	<link rel='stylesheet' href='style_registration.css'>
+</head>
+<header>
+	<div class='logo-image'> <!-- логотип сайта -->
+				<img src='images/logo.jpg' decoding='async' 
+				alt='Logo' width='50'> 
+	</div>
+	<nav id = 'menu1'> <!--Тег-контейнер для меню -->
+		<ul class='menu-main'>
+			<li> <a href='index.html' class='current' > Home </a></li>
+			<li> <a href='about.html'> About </a>
+				 <ul>
+					<li> <a href='#'> About1 </a></li>
+					<li> <a href='#'> About2 </a></li>
+					<li> <a href='#'> About3 </a></li>
+					<li> <a href='#'> About4 </a></li>
+				 </ul>
+			</li>
+			<li> <a href='#'> Blog </a></li>
+			<li> <a href='#'> Contact </a></li>
+		</ul>
+	</nav>
+</header>
+
+<body>
+	<!-- Начало блоков постов -->
+	<hr>
+	<form>
+		<div class = 'container'>
+			<h1>Форма регистрации </h1>
+			<p>Для дальнейшей работы вам необходимо создать аккаунт </p>
+			<hr>
+			<label for='email'> <b>Email </b> </label>
+			<input type='email' placeholder='Введите вашу почту'
+				name='email'id='email' required>
+			<label for='psw'> <b>Пароль </b> </label>
+			<input type='password' placeholder='Введите Пароль'
+				name='psw'id='psw' required>
+				<label for='psw-repeat'> <b>Повторите Пароль </b> </label>
+			<input type='password' placeholder='Введите Пароль'
+				name='psw-repeat'id='psw-repeat' required>
+			<p>
+				Создавая аккаунт на этом сайте вы соглашетесь с 
+				<a href='#'> Политика Конфиденциальности
+				</a>.
+			</p>
+			<div class='btnForm'>
+			<button type ='reset' class='registerbtn'> Очистить </button>
+			<button type ='submit' class='registerbtn'> Регстрация </button>
+			</div>
+			<div class = 'container signin'>
+				<p> Уже есть аккаунт? <a href='#'> Авторизоваться</a>.</p>
+			</div>
+		</div>
+	</form>
+	
+	<hr>
+</body>
+
+<footer> <!-- Оформляем подвал нашего сайта -->
+	<div>
+		<div class='footer-columns'>
+			<div class='logo-image'> <!-- логотип сайта -->
+				<img src='images/logo.jpg' decoding='async' 
+				alt='Logo' width='250'>
+			</div>
+			<div class='footer-column'> <!-- дубль меню из шапки -->
+				 <!--Тег-контейнер для меню -->
+				<ul class='menu-footer'>
+					<li> <a href='#' class='current' > Home </a></li>
+					<li> <a href='#'> About </a></li>
+					<li> <a href='#'> Blog </a></li>
+					<li> <a href='#'> Contact </a></li>
+				</ul>
+			</div>
+			<div class='footer-column'> <!-- контактная информация -->
+				<h3> Свяжитесь с нами</h3>
+				<p>
+				Если вы заинтересованы в работе со мной или просто хотите 
+				пообщаться, просто пишите по электронной почте. <br>
+				<strong>Сайт создан в рамках изучения курса HTML CSS.</strong>
+				<br>
+				<strong> Email: <a href='#'> eeemihaeee.rabota@mail.com</a> </strong>
+				</p>
+			</div>
+		</div>
+		<center>
+			<small> Copyright eeemihaeee &copy; 2025</small>
+		</center>
+	</div>
+</footer>
